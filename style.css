@@ -1,0 +1,300 @@
+    /* --- Global Variables --- */
+    :root {
+      --bg-color: #0f172a; /* Latar belakang gelap (Navy Blue gelap) */
+      --text-color: #e2e8f0; /* Teks putih gading */
+      --accent-color: #38bdf8; /* Biru muda menyala */
+      --card-bg: #1e293b; /* Warna kartu */
+      --font-main: "Poppins", sans-serif;
+    }
+
+    /* --- Reset & Base --- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: var(--font-main);
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: 0.3s;
+    }
+    ul {
+      list-style: none;
+    }
+
+    /* --- Navbar --- */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 5%;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      background: rgba(15, 23, 42, 0.9); /* Efek transparan */
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+    .logo span {
+      color: var(--accent-color);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+    .nav-links a:hover {
+      color: var(--accent-color);
+    }
+
+    .btn-contact {
+      border: 1px solid var(--accent-color);
+      padding: 0.5rem 1.5rem;
+      border-radius: 50px;
+    }
+    .btn-contact:hover {
+      background: var(--accent-color);
+      color: var(--bg-color);
+    }
+
+    .hamburger {
+      display: none;
+      cursor: pointer;
+      font-size: 1.5rem;
+    }
+
+    /* --- Hero Section --- */
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 1rem;
+    }
+
+    .greeting {
+      font-size: 1.2rem;
+      color: var(--accent-color);
+      font-weight: 600;
+      display: block;
+      margin-bottom: 1rem;
+    }
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+    .hero p {
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      color: #94a3b8;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .btn {
+      padding: 0.8rem 2rem;
+      border-radius: 8px;
+      font-weight: 600;
+    }
+    .primary {
+      background: var(--accent-color);
+      color: var(--bg-color);
+    }
+    .secondary {
+      border: 1px solid var(--text-color);
+    }
+    .secondary:hover {
+      background: var(--text-color);
+      color: var(--bg-color);
+    }
+
+    /* --- Sections General --- */
+    .container {
+      padding: 5rem 10%;
+    }
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 3rem;
+      text-align: center;
+    }
+    .section-title::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: var(--accent-color);
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+
+    /* --- About & Skills --- */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+    .skills-card {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .skill {
+      background: var(--card-bg);
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid transparent;
+      transition: 0.3s;
+    }
+    .skill:hover {
+      border-color: var(--accent-color);
+      transform: translateY(-5px);
+    }
+
+    /* --- Projects (Card Style) --- */
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .project-card {
+      background: var(--card-bg);
+      padding: 2rem;
+      border-radius: 16px;
+      transition: 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+    .card-header {
+      font-size: 2rem;
+      color: var(--accent-color);
+      margin-bottom: 1rem;
+    }
+    .tech-stack {
+      margin: 1.5rem 0;
+      display: flex;
+      gap: 0.5rem;
+      font-size: 0.8rem;
+    }
+    .tech-stack span {
+      background: rgba(56, 189, 248, 0.1);
+      color: var(--accent-color);
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+    .card-links {
+      display: flex;
+      gap: 1rem;
+      margin-top: auto;
+    }
+
+    /* --- Footer --- */
+    footer {
+      text-align: center;
+      padding: 4rem 1rem;
+      background: #0b1120;
+    }
+    .socials {
+      margin: 2rem 0;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      font-size: 1.5rem;
+    }
+    .socials a:hover {
+      color: var(--accent-color);
+      transform: scale(1.2);
+    }
+    .copyright {
+      font-size: 0.9rem;
+      color: #64748b;
+    }
+
+    /* --- Responsive (Mobile) --- */
+    @media (max-width: 768px) {
+      .navbar {
+        padding: 1rem;
+      }
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--card-bg);
+        flex-direction: column;
+        padding: 2rem;
+        text-align: center;
+      }
+      .nav-links.active {
+        display: flex;
+      }
+      .hamburger {
+        display: block;
+      }
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Animasi Lambaian Tangan */
+    .wave {
+      display: inline-block;
+      animation: wave-anim 2s infinite;
+      origin: 70% 70%;
+    }
+    @keyframes wave-anim {
+      0% {
+        transform: rotate(0deg);
+      }
+      10% {
+        transform: rotate(14deg);
+      }
+      20% {
+        transform: rotate(-8deg);
+      }
+      30% {
+        transform: rotate(14deg);
+      }
+      40% {
+        transform: rotate(-4deg);
+      }
+      50% {
+        transform: rotate(10deg);
+      }
+      60% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }
