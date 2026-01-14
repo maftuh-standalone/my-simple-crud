@@ -171,6 +171,13 @@
             color: #c73421;
         }
 
+        footer {
+            background-color: #0e0c18;
+            color: #cfd0d4;
+            padding: 20px;
+            text-align: center
+        }
+
         @media screen and (max-width: 768px) {
             .container {
                 max-width: 350px;
