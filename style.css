@@ -137,7 +137,7 @@
         }
         
         .container {
-            max-width: 350px;
+            max-width: 500px;
             margin: 50px auto;
             padding: 25px 0;
             background-color: #0e0c18;
@@ -169,4 +169,10 @@
         
         .emptyMsg {
             color: #c73421;
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                max-width: 350px;
+            }
         }
