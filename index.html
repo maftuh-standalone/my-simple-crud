@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>CRUD STD</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="toast"></div>
+        <dialog id="modalEdit">
+            <h1>Edit data:</h1>
+            <textarea name="areaTxt" id="areaTxt" cols="5" rows="10"></textarea>
+            <input type="submit" value="Simpan" id="saveBtn" class="editBtn" />
+            <input type="submit" value="Batal" id="cancelBtn" class="delBtn" />
+        </dialog>
+        <dialog id="modalDelete">
+            <p>Yakin ingin menghapus data?</p>
+            <input type="submit" value="Ya hapus" id="hapusBtn" class="editBtn" />
+            <input type="submit" value="Tidak" id="cancelBtn2" class="delBtn" />
+        </dialog>
+        <div id="publish">
+            <h1>List items</h1>
+            <ul id="showList"></ul>
+        </div>
+        <div id="form">
+            <input type="text" name="pushTxt" id="pushTxt" />
+            <input type="submit" value="Kirim" id="pushBtn" />
+        </div>
+        <div class="warn">
+            <p>
+                <strong>
+                    Peringatan!
+                </strong>
+            </p>
+            <p>
+                Data disimpan di penyimpanan browser anda! harap diperhatikan untuk menginput Data!
+            </p>
+        </div>
+        <div class="info">
+            <p>
+                <strong>Detail:</strong>
+            </p>
+            <p>
+                ini adalah hasil pembuatan data management sederhana, anda bisa menghapus, edit data secara mandiri. Anda dapat menghubungi saya melalui link dibawah ini
+            </p>
+            <p>
+                <a href="https://instagram.com">Instagram</a> | <a href="https://t.me">Telegram</a> | <a href="https://github.com">Github</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
