@@ -37,6 +37,7 @@
             padding: 10px;
             margin-top: 3px;
             transition: transform 0.3s ease;
+            word-break: break-all;
         }
         
         #publish li:hover {

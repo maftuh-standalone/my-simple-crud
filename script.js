@@ -1,4 +1,4 @@
-    const modal = document.getElementById("modalEdit");
+        const modal = document.getElementById("modalEdit");
         const modalDelete = document.getElementById("modalDelete");
         const hapusBtn = document.getElementById("hapusBtn");
         const cancelBtn2 = document.getElementById("cancelBtn2");
