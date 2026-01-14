@@ -149,6 +149,7 @@
             margin: 25px;
             border-radius: 4px;
             transition: transform 0.3s ease;
+        }
         
         .warn:hover,
         .info:hover {
@@ -159,7 +160,6 @@
             background-color: #495f80;
             color: #cfd0d4;
             padding: 10px;
-        }
             margin: 25px;
             border-radius: 4px;
             transition: transform 0.3s ease;
