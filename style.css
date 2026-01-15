@@ -243,5 +243,6 @@
 
             .info-sidebar {
                 margin-top: 0;
+                align-self: start;
             }
         }
